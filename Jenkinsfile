@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                script {
-                    git 'https://github.com/yakov-grab/mlops_hw2.git'
-                }
-            }
-        }
         stage('Data Creation') {
             steps {
                 script {
